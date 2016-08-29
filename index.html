@@ -1,1 +1,65 @@
-"Hello World!" 
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.stadium {
+			background-color: brown;
+		}
+		.court {
+			margin: 100px 0px 100px 0px;
+			background-color: #4CAF50;
+		}
+		.heightForCell {
+			height: 800px;
+			border: 5px solid #fff;
+		}
+		.bat {
+			height: 100px;
+			width : 20%;
+		}
+		.batcolor1 {
+			border: 1px solid #B71C1C;
+			background-color: #FFCDD2;
+		}
+		.batcolor2 {
+			border: 1px solid #0D47A1;
+			background-color: #BBDEFB;
+		}
+		.ball {
+			border: 1px solid #0D47A1;
+			background-color: yellow;
+			border-radius: 50px;
+			height: 30px;
+			width: 1% !important;
+			margin: 100px 0px 0px 0px;
+		}
+	</style>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="pingpong.js"></script>
+	<title>Ping pong</title>
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>	
+	
+	<div class="container-fluid stadium" ng-app="myApp">
+		<div class="row court" ng-controller="PingPongCtrl">
+			<div id="lPlayer" class="col-md-1 heightForCell" ng-mousemove="moveBat($event,'bat1')">
+				<div class="bat batcolor1 pull-right" id="bat1"></div>
+			</div>
+			<div class="col-md-10 heightForCell">
+				<div id="ball" class="col-md-1 ball"></div>
+			</div>
+			<div id="rPlayer" class="col-md-1 heightForCell" ng-mousemove="moveBat($event,'bat2')">
+				<div class="bat batcolor2" id="bat2"></div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
+</body>
+</html>
