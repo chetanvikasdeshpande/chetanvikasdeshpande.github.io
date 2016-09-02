@@ -1,5 +1,8 @@
 # chetanvikasdeshpande.github.io
 
+# How to launch
+http://chetanvikasdeshpande.github.io
+
 Demonstration of Simple Ping Pong Game using jQuery and AngualrJs.
 
 To Be Designed
